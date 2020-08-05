@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QPRuntimeKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QPRuntimeKit.'
+  s.summary          = 'Encapsulate Objective-C Runtime to parse or modify Runtime Objects in a manner consistent with its type system.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Encapsulate Objective-C Runtime to parse or modify Runtime Objects in
+a manner consistent with its type system, each prototype object has a
+corresponding wrapper class.
                        DESC
 
   s.homepage         = 'https://github.com/keqiongpan/QPRuntimeKit'
@@ -39,7 +41,7 @@ TODO: Add long description of the pod here.
   #   'QPRuntimeKit' => ['QPRuntimeKit/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
