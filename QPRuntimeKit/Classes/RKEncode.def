@@ -72,8 +72,10 @@ RK_SCALAR_SIGNATURE(Long, 'l', long)
 RK_SCALAR_SIGNATURE(UnsignedLong, 'L', unsigned long)
 RK_SCALAR_SIGNATURE(LongLong, 'q', long long)
 RK_SCALAR_SIGNATURE(UnsignedLongLong, 'Q', unsigned long long)
+#if !TARGET_OS_WATCH
 RK_SCALAR_SIGNATURE(Int128, 't', __int128_t)
 RK_SCALAR_SIGNATURE(UnsignedInt128, 'T', __uint128_t)
+#endif
 RK_SCALAR_SIGNATURE(Float, 'f', float)
 RK_SCALAR_SIGNATURE(Double, 'd', double)
 RK_SCALAR_SIGNATURE(LongDouble, 'D', long double)

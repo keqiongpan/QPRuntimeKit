@@ -262,12 +262,20 @@ RK_PRIMITIVE_IMPLEMENTATION(BitField, ([NSString stringWithFormat:@"%@:%u", self
 
 - (NSUInteger)bits
 {
+#if TARGET_OS_WATCH
+    return ((_bits = MAX(MIN(_bits, sizeof(long long) * 8), 1)));
+#else
     return ((_bits = MAX(MIN(_bits, sizeof(__int128_t) * 8), 1)));
+#endif
 }
 
 - (void)setBits:(NSUInteger)bits
 {
+#if TARGET_OS_WATCH
+    _bits = MAX(MIN(bits, sizeof(long long) * 8), 1);
+#else
     _bits = MAX(MIN(bits, sizeof(__int128_t) * 8), 1);
+#endif
 }
 
 - (RKType *)valueType
@@ -288,7 +296,11 @@ RK_PRIMITIVE_IMPLEMENTATION(BitField, ([NSString stringWithFormat:@"%@:%u", self
     else if (bits <= sizeof(long long) * 8) {
         return RKLongLongType.type;
     }
+#if TARGET_OS_WATCH
+    return RKLongLongType.type;
+#else
     return RKInt128Type.type;
+#endif
 }
 
 - (NSString *)encodeSpecifiers
