@@ -246,7 +246,7 @@
 		1B188A3822BA131700561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B73732024DB33D100DBB7F2 /* RKIvarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKIvarLayout.m; sourceTree = "<group>"; };
 		1B73732124DB33D100DBB7F2 /* RKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObject.m; sourceTree = "<group>"; };
-		1B73732224DB33D100DBB7F2 /* RKEncode.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RKEncode.def; sourceTree = "<group>"; };
+		1B73732224DB33D100DBB7F2 /* RKEncode.def */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = RKEncode.def; sourceTree = "<group>"; };
 		1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTypeEncoding.h; sourceTree = "<group>"; };
 		1B73732424DB33D100DBB7F2 /* RKMethodTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMethodTypeEncoding.h; sourceTree = "<group>"; };
 		1B73732524DB33D100DBB7F2 /* RKSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSelector.h; sourceTree = "<group>"; };
@@ -411,39 +411,39 @@
 				1B188A2B22BA131700561366 /* QPRuntimeKit.h */,
 				1B73733824DB33D200DBB7F2 /* RKRuntime.h */,
 				1B73733C24DB33D200DBB7F2 /* RKRuntime.m */,
-				1B73732B24DB33D100DBB7F2 /* RKClass.h */,
-				1B73733524DB33D100DBB7F2 /* RKClass.m */,
-				1B73732224DB33D100DBB7F2 /* RKEncode.def */,
-				1B73732D24DB33D100DBB7F2 /* RKEncode.h */,
-				1B73733924DB33D200DBB7F2 /* RKEncode.m */,
 				1B73732C24DB33D100DBB7F2 /* RKImage.h */,
 				1B73733A24DB33D200DBB7F2 /* RKImage.m */,
-				1B73732924DB33D100DBB7F2 /* RKImplementation.h */,
-				1B73733124DB33D100DBB7F2 /* RKImplementation.m */,
-				1B73732E24DB33D100DBB7F2 /* RKIvar.h */,
-				1B73733424DB33D100DBB7F2 /* RKIvar.m */,
-				1B73734024DB33D200DBB7F2 /* RKIvarLayout.h */,
-				1B73732024DB33D100DBB7F2 /* RKIvarLayout.m */,
+				1B73733F24DB33D200DBB7F2 /* RKObject.h */,
+				1B73732124DB33D100DBB7F2 /* RKObject.m */,
+				1B73732B24DB33D100DBB7F2 /* RKClass.h */,
+				1B73733524DB33D100DBB7F2 /* RKClass.m */,
+				1B73733324DB33D100DBB7F2 /* RKProtocol.h */,
+				1B73733724DB33D200DBB7F2 /* RKProtocol.m */,
 				1B73732624DB33D100DBB7F2 /* RKMethod.h */,
 				1B73734224DB33D200DBB7F2 /* RKMethod.m */,
 				1B73733B24DB33D200DBB7F2 /* RKMethodDescription.h */,
 				1B73732A24DB33D100DBB7F2 /* RKMethodDescription.m */,
-				1B73732424DB33D100DBB7F2 /* RKMethodTypeEncoding.h */,
-				1B73732824DB33D100DBB7F2 /* RKMethodTypeEncoding.m */,
-				1B73733F24DB33D200DBB7F2 /* RKObject.h */,
-				1B73732124DB33D100DBB7F2 /* RKObject.m */,
+				1B73732924DB33D100DBB7F2 /* RKImplementation.h */,
+				1B73733124DB33D100DBB7F2 /* RKImplementation.m */,
 				1B73732724DB33D100DBB7F2 /* RKProperty.h */,
 				1B73733D24DB33D200DBB7F2 /* RKProperty.m */,
 				1B73733224DB33D100DBB7F2 /* RKPropertyAttribute.h */,
 				1B73733624DB33D200DBB7F2 /* RKPropertyAttribute.m */,
-				1B73733324DB33D100DBB7F2 /* RKProtocol.h */,
-				1B73733724DB33D200DBB7F2 /* RKProtocol.m */,
+				1B73732E24DB33D100DBB7F2 /* RKIvar.h */,
+				1B73733424DB33D100DBB7F2 /* RKIvar.m */,
+				1B73734024DB33D200DBB7F2 /* RKIvarLayout.h */,
+				1B73732024DB33D100DBB7F2 /* RKIvarLayout.m */,
 				1B73732524DB33D100DBB7F2 /* RKSelector.h */,
 				1B73733E24DB33D200DBB7F2 /* RKSelector.m */,
-				1B73733024DB33D100DBB7F2 /* RKType.h */,
-				1B73732F24DB33D100DBB7F2 /* RKType.m */,
 				1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */,
 				1B73734124DB33D200DBB7F2 /* RKTypeEncoding.m */,
+				1B73732424DB33D100DBB7F2 /* RKMethodTypeEncoding.h */,
+				1B73732824DB33D100DBB7F2 /* RKMethodTypeEncoding.m */,
+				1B73732224DB33D100DBB7F2 /* RKEncode.def */,
+				1B73732D24DB33D100DBB7F2 /* RKEncode.h */,
+				1B73733924DB33D200DBB7F2 /* RKEncode.m */,
+				1B73733024DB33D100DBB7F2 /* RKType.h */,
+				1B73732F24DB33D100DBB7F2 /* RKType.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
