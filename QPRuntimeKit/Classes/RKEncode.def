@@ -1,0 +1,226 @@
+//
+//  RKEncode.def
+//  QPRuntimeKit
+//
+//  Created by keqiongpan@163.com on 2018/1/18.
+//  Copyright (c) 2020 Qiongpan Ke. All rights reserved.
+//
+
+
+#pragma mark - Qualifiers
+
+#ifndef RK_QUALIFIER
+#  define RK_QUALIFIER(name, code, flag)
+#endif
+
+#ifndef RK_TYPE_QUALIFIER
+#  define RK_TYPE_QUALIFIER(name, code, flag) RK_QUALIFIER(name, code, flag)
+#endif
+
+#ifndef RK_ARGUMENT_QUALIFIER
+#  define RK_ARGUMENT_QUALIFIER(name, code, flag) RK_QUALIFIER(name, code, flag)
+#endif
+
+#ifndef RK_METHOD_QUALIFIER
+#  define RK_METHOD_QUALIFIER(name, code, flag) RK_QUALIFIER(name, code, flag)
+#endif
+
+RK_TYPE_QUALIFIER(Const, 'r', 0x0001UL)
+
+RK_ARGUMENT_QUALIFIER(Bycopy, 'O', 0x0010UL)
+RK_ARGUMENT_QUALIFIER(Byref, 'R', 0x0020UL)
+
+RK_ARGUMENT_QUALIFIER(In, 'n', 0x0040UL)
+RK_ARGUMENT_QUALIFIER(Inout, 'N', 0x00c0UL)
+RK_ARGUMENT_QUALIFIER(Out, 'o', 0x0080UL)
+
+RK_METHOD_QUALIFIER(Oneway, 'V', 0x0100UL)
+
+#undef RK_METHOD_QUALIFIER
+#undef RK_ARGUMENT_QUALIFIER
+#undef RK_TYPE_QUALIFIER
+#undef RK_QUALIFIER
+
+
+#pragma mark - Signatures
+
+#ifndef RK_SIGNATURE
+#  define RK_SIGNATURE(name, code, type)
+#endif
+
+
+#pragma mark - Primitives
+
+#ifndef RK_PRIMITIVE_SIGNATURE
+#  define RK_PRIMITIVE_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+
+#pragma mark - Scalars
+
+#ifndef RK_SCALAR_SIGNATURE
+#  define RK_SCALAR_SIGNATURE(name, code, type) RK_PRIMITIVE_SIGNATURE(name, code, type)
+#endif
+
+RK_SCALAR_SIGNATURE(Char, 'c', char)
+RK_SCALAR_SIGNATURE(UnsignedChar, 'C', unsigned char)
+RK_SCALAR_SIGNATURE(Short, 's', short)
+RK_SCALAR_SIGNATURE(UnsignedShort, 'S', unsigned short)
+RK_SCALAR_SIGNATURE(Int, 'i', int)
+RK_SCALAR_SIGNATURE(UnsignedInt, 'I', unsigned int)
+RK_SCALAR_SIGNATURE(Long, 'l', long)
+RK_SCALAR_SIGNATURE(UnsignedLong, 'L', unsigned long)
+RK_SCALAR_SIGNATURE(LongLong, 'q', long long)
+RK_SCALAR_SIGNATURE(UnsignedLongLong, 'Q', unsigned long long)
+RK_SCALAR_SIGNATURE(Int128, 't', __int128_t)
+RK_SCALAR_SIGNATURE(UnsignedInt128, 'T', __uint128_t)
+RK_SCALAR_SIGNATURE(Float, 'f', float)
+RK_SCALAR_SIGNATURE(Double, 'd', double)
+RK_SCALAR_SIGNATURE(LongDouble, 'D', long double)
+
+#undef RK_SCALAR_SIGNATURE
+
+
+#pragma mark - void/bool/char */bit-field
+
+#ifndef RK_VOID_SIGNATURE
+#  define RK_VOID_SIGNATURE(name, code, type) RK_PRIMITIVE_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_BOOL_SIGNATURE
+#  define RK_BOOL_SIGNATURE(name, code, type) RK_PRIMITIVE_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_CHARACTERSPOINTER_SIGNATURE
+#  define RK_CHARACTERSPOINTER_SIGNATURE(name, code, type) RK_PRIMITIVE_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_BITFIELD_SIGNATURE
+#  define RK_BITFIELD_SIGNATURE(name, code, type) RK_PRIMITIVE_SIGNATURE(name, code, type)
+#endif
+
+RK_VOID_SIGNATURE(Void, 'v', void)
+RK_BOOL_SIGNATURE(Bool, 'B', _Bool)
+RK_CHARACTERSPOINTER_SIGNATURE(CharactersPointer, '*', char *)
+RK_BITFIELD_SIGNATURE(BitField, 'b', int)
+
+#undef RK_BITFIELD_SIGNATURE
+#undef RK_CHARACTERSPOINTER_SIGNATURE
+#undef RK_BOOL_SIGNATURE
+#undef RK_VOID_SIGNATURE
+
+
+#pragma mark - Pointer/Function
+
+#ifndef RK_POINTER_SIGNATURE
+#  define RK_POINTER_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_FUNCTION_SIGNATURE
+#  define RK_FUNCTION_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+RK_POINTER_SIGNATURE(Pointer, '^', void *)
+RK_FUNCTION_SIGNATURE(Function, '?', <returntype> (<args...>))
+
+#undef RK_FUNCTION_SIGNATURE
+#undef RK_POINTER_SIGNATURE
+
+
+#pragma mark - Array/Struct/Union
+
+#ifndef RK_COMPOSITE_SIGNATURE
+#  define RK_COMPOSITE_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_COMPOSITE_BEGIN_SIGNATURE
+#  define RK_COMPOSITE_BEGIN_SIGNATURE(name, code, type) RK_COMPOSITE_SIGNATURE(name##Begin, code, type)
+#endif
+
+#ifndef RK_COMPOSITE_END_SIGNATURE
+#  define RK_COMPOSITE_END_SIGNATURE(name, code) RK_COMPOSITE_SIGNATURE(name##End, code, __UNSUPPORTED_TYPE__)
+#endif
+
+RK_COMPOSITE_BEGIN_SIGNATURE(Array, '[', array [])
+RK_COMPOSITE_END_SIGNATURE(Array, ']')
+RK_COMPOSITE_BEGIN_SIGNATURE(Struct, '{', struct {})
+RK_COMPOSITE_END_SIGNATURE(Struct, '}')
+RK_COMPOSITE_BEGIN_SIGNATURE(Union, '(', union {})
+RK_COMPOSITE_END_SIGNATURE(Union, ')')
+
+#undef RK_COMPOSITE_END_SIGNATURE
+#undef RK_COMPOSITE_BEGIN_SIGNATURE
+#undef RK_COMPOSITE_SIGNATURE
+
+
+#pragma mark - Objective-C Types
+
+#ifndef RK_OBJECTIVEC_SIGNATURE
+#  define RK_OBJECTIVEC_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_CLASS_SIGNATURE
+#  define RK_CLASS_SIGNATURE(name, code, type) RK_OBJECTIVEC_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_SELECTOR_SIGNATURE
+#  define RK_SELECTOR_SIGNATURE(name, code, type) RK_OBJECTIVEC_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_OBJECT_SIGNATURE
+#  define RK_OBJECT_SIGNATURE(name, code, type) RK_OBJECTIVEC_SIGNATURE(name, code, type)
+#endif
+
+//#ifndef RK_BLOCK_SIGNATURE
+//#  define RK_BLOCK_SIGNATURE(name, code, type) RK_OBJECTIVEC_SIGNATURE(name, code, type)
+//#endif
+
+RK_CLASS_SIGNATURE(Class, '#', Class)
+RK_SELECTOR_SIGNATURE(Selector, ':', SEL)
+RK_OBJECT_SIGNATURE(Object, '@', id)
+//RK_BLOCK_SIGNATURE(Block, "@?", <returntype> ^(<args...>))
+
+//#undef RK_BLOCK_SIGNATURE
+#undef RK_OBJECT_SIGNATURE
+#undef RK_SELECTOR_SIGNATURE
+#undef RK_CLASS_SIGNATURE
+#undef RK_OBJECTIVEC_SIGNATURE
+
+
+#pragma mark - Others
+
+#ifndef RK_ATOMIC_SIGNATURE
+#  define RK_ATOMIC_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+#ifndef RK_COMPLEX_SIGNATURE
+#  define RK_COMPLEX_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+#endif
+
+//#ifndef RK_VECTOR_SIGNATURE
+//#  define RK_VECTOR_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+//#endif
+
+//#ifndef RK_HALF_SIGNATURE
+//#  define RK_HALF_SIGNATURE(name, value, type) RK_SIGNATURE(name, value, type)
+//#endif
+
+//#ifndef RK_ATOM_SIGNATURE
+//#  define RK_ATOM_SIGNATURE(name, code, type) RK_SIGNATURE(name, code, type)
+//#endif
+
+RK_ATOMIC_SIGNATURE(Atomic, 'A', _Atomic <scalartype>)
+RK_COMPLEX_SIGNATURE(Complex, 'j', <scalartype> _Complex)
+//RK_VECTOR_SIGNATURE(Vector, '!', __attribute__((__ext_vector_type__(<count>))) <scalartype>)
+//RK_HALF_SIGNATURE(Half, ' ', cl_half)
+//RK_ATOM_SIGNATURE(Atom, '%', __UNSUPPORTED_TYPE__)
+
+//#undef RK_ATOM_SIGNATURE
+//#undef RK_HALF_SIGNATURE
+//#undef RK_VECTOR_SIGNATURE
+#undef RK_COMPLEX_SIGNATURE
+#undef RK_ATOMIC_SIGNATURE
+
+
+#undef RK_PRIMITIVE_SIGNATURE
+#undef RK_SIGNATURE
