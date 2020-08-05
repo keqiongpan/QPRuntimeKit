@@ -1,0 +1,13 @@
+//
+//  Prefix.pch
+//  QPRuntimeKitTests
+//
+//  Created by keqiongpan@163.com on 2020/08/06.
+//  Copyright (c) 2020 Qiongpan Ke. All rights reserved.
+//
+
+//  The contents of this file are implicitly included at the beginning of every test case source file.
+
+#ifdef __OBJC__
+
+#endif
