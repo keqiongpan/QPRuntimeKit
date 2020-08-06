@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QPRuntimeKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Encapsulate Objective-C Runtime to parse or modify Runtime Objects in a manner consistent with its type system.'
 
 # This description is used to generate tags and improve search results.
@@ -42,6 +42,9 @@ corresponding wrapper class.
   # }
 
   s.public_header_files = ['QPRuntimeKit/Classes/**/*.h']
+  s.private_header_files = ['QPRuntimeKit/Classes/RKEncode.def',
+                            'QPRuntimeKit/Classes/RKEncode.h',
+                            'QPRuntimeKit/Classes/RKType.h',]
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -18,6 +18,10 @@
 		1B73734C24DB33D200DBB7F2 /* RKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732124DB33D100DBB7F2 /* RKObject.m */; };
 		1B73734E24DB33D200DBB7F2 /* RKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732124DB33D100DBB7F2 /* RKObject.m */; };
 		1B73735024DB33D200DBB7F2 /* RKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732124DB33D100DBB7F2 /* RKObject.m */; };
+		1B73735124DB33D200DBB7F2 /* RKEncode.def in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732224DB33D100DBB7F2 /* RKEncode.def */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73735324DB33D200DBB7F2 /* RKEncode.def in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732224DB33D100DBB7F2 /* RKEncode.def */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73735524DB33D200DBB7F2 /* RKEncode.def in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732224DB33D100DBB7F2 /* RKEncode.def */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73735724DB33D200DBB7F2 /* RKEncode.def in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732224DB33D100DBB7F2 /* RKEncode.def */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73735824DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73735924DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73735A24DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,10 +62,22 @@
 		1B73738324DB33D200DBB7F2 /* RKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732C24DB33D100DBB7F2 /* RKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738424DB33D200DBB7F2 /* RKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732C24DB33D100DBB7F2 /* RKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738524DB33D200DBB7F2 /* RKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732C24DB33D100DBB7F2 /* RKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73738624DB33D200DBB7F2 /* RKEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732D24DB33D100DBB7F2 /* RKEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73738724DB33D200DBB7F2 /* RKEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732D24DB33D100DBB7F2 /* RKEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73738824DB33D200DBB7F2 /* RKEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732D24DB33D100DBB7F2 /* RKEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73738924DB33D200DBB7F2 /* RKEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732D24DB33D100DBB7F2 /* RKEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738A24DB33D200DBB7F2 /* RKIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732E24DB33D100DBB7F2 /* RKIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738B24DB33D200DBB7F2 /* RKIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732E24DB33D100DBB7F2 /* RKIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738C24DB33D200DBB7F2 /* RKIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732E24DB33D100DBB7F2 /* RKIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73738D24DB33D200DBB7F2 /* RKIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73732E24DB33D100DBB7F2 /* RKIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73738E24DB33D200DBB7F2 /* RKType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732F24DB33D100DBB7F2 /* RKType.m */; };
+		1B73739024DB33D200DBB7F2 /* RKType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732F24DB33D100DBB7F2 /* RKType.m */; };
+		1B73739224DB33D200DBB7F2 /* RKType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732F24DB33D100DBB7F2 /* RKType.m */; };
+		1B73739424DB33D200DBB7F2 /* RKType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73732F24DB33D100DBB7F2 /* RKType.m */; };
+		1B73739524DB33D200DBB7F2 /* RKType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733024DB33D100DBB7F2 /* RKType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73739624DB33D200DBB7F2 /* RKType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733024DB33D100DBB7F2 /* RKType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73739724DB33D200DBB7F2 /* RKType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733024DB33D100DBB7F2 /* RKType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B73739824DB33D200DBB7F2 /* RKType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733024DB33D100DBB7F2 /* RKType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B73739924DB33D200DBB7F2 /* RKImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733124DB33D100DBB7F2 /* RKImplementation.m */; };
 		1B73739B24DB33D200DBB7F2 /* RKImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733124DB33D100DBB7F2 /* RKImplementation.m */; };
 		1B73739D24DB33D200DBB7F2 /* RKImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733124DB33D100DBB7F2 /* RKImplementation.m */; };
@@ -94,6 +110,10 @@
 		1B7373C524DB33D200DBB7F2 /* RKRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733824DB33D200DBB7F2 /* RKRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B7373C624DB33D200DBB7F2 /* RKRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733824DB33D200DBB7F2 /* RKRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B7373C724DB33D200DBB7F2 /* RKRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B73733824DB33D200DBB7F2 /* RKRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B7373C824DB33D200DBB7F2 /* RKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733924DB33D200DBB7F2 /* RKEncode.m */; };
+		1B7373CA24DB33D200DBB7F2 /* RKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733924DB33D200DBB7F2 /* RKEncode.m */; };
+		1B7373CC24DB33D200DBB7F2 /* RKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733924DB33D200DBB7F2 /* RKEncode.m */; };
+		1B7373CE24DB33D200DBB7F2 /* RKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733924DB33D200DBB7F2 /* RKEncode.m */; };
 		1B7373CF24DB33D200DBB7F2 /* RKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733A24DB33D200DBB7F2 /* RKImage.m */; };
 		1B7373D124DB33D200DBB7F2 /* RKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733A24DB33D200DBB7F2 /* RKImage.m */; };
 		1B7373D324DB33D200DBB7F2 /* RKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73733A24DB33D200DBB7F2 /* RKImage.m */; };
@@ -175,6 +195,7 @@
 		1B188A3822BA131700561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B73732024DB33D100DBB7F2 /* RKIvarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKIvarLayout.m; sourceTree = "<group>"; };
 		1B73732124DB33D100DBB7F2 /* RKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObject.m; sourceTree = "<group>"; };
+		1B73732224DB33D100DBB7F2 /* RKEncode.def */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = RKEncode.def; sourceTree = "<group>"; };
 		1B73732324DB33D100DBB7F2 /* RKTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTypeEncoding.h; sourceTree = "<group>"; };
 		1B73732424DB33D100DBB7F2 /* RKMethodTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMethodTypeEncoding.h; sourceTree = "<group>"; };
 		1B73732524DB33D100DBB7F2 /* RKSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSelector.h; sourceTree = "<group>"; };
@@ -185,7 +206,10 @@
 		1B73732A24DB33D100DBB7F2 /* RKMethodDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMethodDescription.m; sourceTree = "<group>"; };
 		1B73732B24DB33D100DBB7F2 /* RKClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKClass.h; sourceTree = "<group>"; };
 		1B73732C24DB33D100DBB7F2 /* RKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKImage.h; sourceTree = "<group>"; };
+		1B73732D24DB33D100DBB7F2 /* RKEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKEncode.h; sourceTree = "<group>"; };
 		1B73732E24DB33D100DBB7F2 /* RKIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKIvar.h; sourceTree = "<group>"; };
+		1B73732F24DB33D100DBB7F2 /* RKType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKType.m; sourceTree = "<group>"; };
+		1B73733024DB33D100DBB7F2 /* RKType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKType.h; sourceTree = "<group>"; };
 		1B73733124DB33D100DBB7F2 /* RKImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKImplementation.m; sourceTree = "<group>"; };
 		1B73733224DB33D100DBB7F2 /* RKPropertyAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKPropertyAttribute.h; sourceTree = "<group>"; };
 		1B73733324DB33D100DBB7F2 /* RKProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKProtocol.h; sourceTree = "<group>"; };
@@ -194,6 +218,7 @@
 		1B73733624DB33D200DBB7F2 /* RKPropertyAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKPropertyAttribute.m; sourceTree = "<group>"; };
 		1B73733724DB33D200DBB7F2 /* RKProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKProtocol.m; sourceTree = "<group>"; };
 		1B73733824DB33D200DBB7F2 /* RKRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRuntime.h; sourceTree = "<group>"; };
+		1B73733924DB33D200DBB7F2 /* RKEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKEncode.m; sourceTree = "<group>"; };
 		1B73733A24DB33D200DBB7F2 /* RKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKImage.m; sourceTree = "<group>"; };
 		1B73733B24DB33D200DBB7F2 /* RKMethodDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMethodDescription.h; sourceTree = "<group>"; };
 		1B73733C24DB33D200DBB7F2 /* RKRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRuntime.m; sourceTree = "<group>"; };
@@ -363,6 +388,11 @@
 				1B73734124DB33D200DBB7F2 /* RKTypeEncoding.m */,
 				1B73732424DB33D100DBB7F2 /* RKMethodTypeEncoding.h */,
 				1B73732824DB33D100DBB7F2 /* RKMethodTypeEncoding.m */,
+				1B73732224DB33D100DBB7F2 /* RKEncode.def */,
+				1B73732D24DB33D100DBB7F2 /* RKEncode.h */,
+				1B73733924DB33D200DBB7F2 /* RKEncode.m */,
+				1B73733024DB33D100DBB7F2 /* RKType.h */,
+				1B73732F24DB33D100DBB7F2 /* RKType.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -397,6 +427,7 @@
 			files = (
 				1B73736424DB33D200DBB7F2 /* RKMethod.h in Headers */,
 				1B73738A24DB33D200DBB7F2 /* RKIvar.h in Headers */,
+				1B73738624DB33D200DBB7F2 /* RKEncode.h in Headers */,
 				1B73736024DB33D200DBB7F2 /* RKSelector.h in Headers */,
 				1B73737E24DB33D200DBB7F2 /* RKClass.h in Headers */,
 				1B7373A024DB33D200DBB7F2 /* RKPropertyAttribute.h in Headers */,
@@ -408,9 +439,11 @@
 				1B7373F324DB33D200DBB7F2 /* RKIvarLayout.h in Headers */,
 				1B73737324DB33D200DBB7F2 /* RKImplementation.h in Headers */,
 				1B73735824DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */,
+				1B73739524DB33D200DBB7F2 /* RKType.h in Headers */,
 				1B7373D624DB33D200DBB7F2 /* RKMethodDescription.h in Headers */,
 				1B188A3922BA131700561366 /* QPRuntimeKit.h in Headers */,
 				1B73738224DB33D200DBB7F2 /* RKImage.h in Headers */,
+				1B73735124DB33D200DBB7F2 /* RKEncode.def in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +453,7 @@
 			files = (
 				1B73736524DB33D200DBB7F2 /* RKMethod.h in Headers */,
 				1B73738B24DB33D200DBB7F2 /* RKIvar.h in Headers */,
+				1B73738724DB33D200DBB7F2 /* RKEncode.h in Headers */,
 				1B73736124DB33D200DBB7F2 /* RKSelector.h in Headers */,
 				1B73737F24DB33D200DBB7F2 /* RKClass.h in Headers */,
 				1B7373A124DB33D200DBB7F2 /* RKPropertyAttribute.h in Headers */,
@@ -431,9 +465,11 @@
 				1B7373F424DB33D200DBB7F2 /* RKIvarLayout.h in Headers */,
 				1B73737424DB33D200DBB7F2 /* RKImplementation.h in Headers */,
 				1B73735924DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */,
+				1B73739624DB33D200DBB7F2 /* RKType.h in Headers */,
 				1B7373D724DB33D200DBB7F2 /* RKMethodDescription.h in Headers */,
 				1BF29CAB22BA24940046611D /* QPRuntimeKit.h in Headers */,
 				1B73738324DB33D200DBB7F2 /* RKImage.h in Headers */,
+				1B73735324DB33D200DBB7F2 /* RKEncode.def in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +479,7 @@
 			files = (
 				1B73736624DB33D200DBB7F2 /* RKMethod.h in Headers */,
 				1B73738C24DB33D200DBB7F2 /* RKIvar.h in Headers */,
+				1B73738824DB33D200DBB7F2 /* RKEncode.h in Headers */,
 				1B73736224DB33D200DBB7F2 /* RKSelector.h in Headers */,
 				1B73738024DB33D200DBB7F2 /* RKClass.h in Headers */,
 				1B7373A224DB33D200DBB7F2 /* RKPropertyAttribute.h in Headers */,
@@ -454,9 +491,11 @@
 				1B7373F524DB33D200DBB7F2 /* RKIvarLayout.h in Headers */,
 				1B73737524DB33D200DBB7F2 /* RKImplementation.h in Headers */,
 				1B73735A24DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */,
+				1B73739724DB33D200DBB7F2 /* RKType.h in Headers */,
 				1B7373D824DB33D200DBB7F2 /* RKMethodDescription.h in Headers */,
 				1BF29CC322BA2AD00046611D /* QPRuntimeKit.h in Headers */,
 				1B73738424DB33D200DBB7F2 /* RKImage.h in Headers */,
+				1B73735524DB33D200DBB7F2 /* RKEncode.def in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +505,7 @@
 			files = (
 				1B73736724DB33D200DBB7F2 /* RKMethod.h in Headers */,
 				1B73738D24DB33D200DBB7F2 /* RKIvar.h in Headers */,
+				1B73738924DB33D200DBB7F2 /* RKEncode.h in Headers */,
 				1B73736324DB33D200DBB7F2 /* RKSelector.h in Headers */,
 				1B73738124DB33D200DBB7F2 /* RKClass.h in Headers */,
 				1B7373A324DB33D200DBB7F2 /* RKPropertyAttribute.h in Headers */,
@@ -477,9 +517,11 @@
 				1B7373F624DB33D200DBB7F2 /* RKIvarLayout.h in Headers */,
 				1B73737624DB33D200DBB7F2 /* RKImplementation.h in Headers */,
 				1B73735B24DB33D200DBB7F2 /* RKTypeEncoding.h in Headers */,
+				1B73739824DB33D200DBB7F2 /* RKType.h in Headers */,
 				1B7373D924DB33D200DBB7F2 /* RKMethodDescription.h in Headers */,
 				1BF29CDB22BA2C230046611D /* QPRuntimeKit.h in Headers */,
 				1B73738524DB33D200DBB7F2 /* RKImage.h in Headers */,
+				1B73735724DB33D200DBB7F2 /* RKEncode.def in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +757,8 @@
 				1B7373F724DB33D200DBB7F2 /* RKTypeEncoding.m in Sources */,
 				1B7373DA24DB33D200DBB7F2 /* RKRuntime.m in Sources */,
 				1B73734324DB33D200DBB7F2 /* RKIvarLayout.m in Sources */,
+				1B73738E24DB33D200DBB7F2 /* RKType.m in Sources */,
+				1B7373C824DB33D200DBB7F2 /* RKEncode.m in Sources */,
 				1B73736C24DB33D200DBB7F2 /* RKMethodTypeEncoding.m in Sources */,
 				1B7373B624DB33D200DBB7F2 /* RKPropertyAttribute.m in Sources */,
 				1B7373BD24DB33D200DBB7F2 /* RKProtocol.m in Sources */,
@@ -745,6 +789,8 @@
 				1B7373F924DB33D200DBB7F2 /* RKTypeEncoding.m in Sources */,
 				1B7373DC24DB33D200DBB7F2 /* RKRuntime.m in Sources */,
 				1B73734524DB33D200DBB7F2 /* RKIvarLayout.m in Sources */,
+				1B73739024DB33D200DBB7F2 /* RKType.m in Sources */,
+				1B7373CA24DB33D200DBB7F2 /* RKEncode.m in Sources */,
 				1B73736E24DB33D200DBB7F2 /* RKMethodTypeEncoding.m in Sources */,
 				1B7373B824DB33D200DBB7F2 /* RKPropertyAttribute.m in Sources */,
 				1B7373BF24DB33D200DBB7F2 /* RKProtocol.m in Sources */,
@@ -775,6 +821,8 @@
 				1B7373FB24DB33D200DBB7F2 /* RKTypeEncoding.m in Sources */,
 				1B7373DE24DB33D200DBB7F2 /* RKRuntime.m in Sources */,
 				1B73734724DB33D200DBB7F2 /* RKIvarLayout.m in Sources */,
+				1B73739224DB33D200DBB7F2 /* RKType.m in Sources */,
+				1B7373CC24DB33D200DBB7F2 /* RKEncode.m in Sources */,
 				1B73737024DB33D200DBB7F2 /* RKMethodTypeEncoding.m in Sources */,
 				1B7373BA24DB33D200DBB7F2 /* RKPropertyAttribute.m in Sources */,
 				1B7373C124DB33D200DBB7F2 /* RKProtocol.m in Sources */,
@@ -805,6 +853,8 @@
 				1B7373FD24DB33D200DBB7F2 /* RKTypeEncoding.m in Sources */,
 				1B7373E024DB33D200DBB7F2 /* RKRuntime.m in Sources */,
 				1B73734924DB33D200DBB7F2 /* RKIvarLayout.m in Sources */,
+				1B73739424DB33D200DBB7F2 /* RKType.m in Sources */,
+				1B7373CE24DB33D200DBB7F2 /* RKEncode.m in Sources */,
 				1B73737224DB33D200DBB7F2 /* RKMethodTypeEncoding.m in Sources */,
 				1B7373BC24DB33D200DBB7F2 /* RKPropertyAttribute.m in Sources */,
 				1B7373C324DB33D200DBB7F2 /* RKProtocol.m in Sources */,
@@ -891,7 +941,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -947,7 +997,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
