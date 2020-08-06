@@ -15,7 +15,7 @@ QPRuntimeKit 支持使用第三方库管理工具 [CocoaPods](http://cocoapods.o
 可以在 Podfile 文件中添加如下项：
 
 ```
-pod 'QPRuntimeKit', '~> 0.1.0'
+pod 'QPRuntimeKit', '~> 0.1.1'
 ```
 
 
@@ -26,7 +26,7 @@ QPRuntimeKit 同时兼容使用去中心化的库管理工具 [Carthage](https:/
 可以在 Cartfile 文件中添加如下项：
 
 ```
-github "keqiongpan/QPRuntimeKit" ~> 0.1.0
+github "keqiongpan/QPRuntimeKit" ~> 0.1.1
 ```
 
 
