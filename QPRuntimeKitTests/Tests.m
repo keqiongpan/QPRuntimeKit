@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+@import QPRuntimeKit;
 
 @interface Tests : XCTestCase
 
@@ -26,9 +27,15 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testClass
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    Class aClass = [NSObject class];
+    RKClass *objectClass = [RKClass classWithPrototype:aClass];
+    XCTAssertNotNil(objectClass);
+
+    NSString *objectClassRuntimeDescription = [objectClass description];
+    XCTAssert([objectClassRuntimeDescription rangeOfString:@"@interface NSObject"].location >= 0);
+    NSLog(@"NSObject's class:\n%@", objectClassRuntimeDescription);
 }
 
 @end
