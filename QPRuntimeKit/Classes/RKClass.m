@@ -233,7 +233,11 @@
 - (RKImplementation *)implementationReturnsStructureForMethodName:(NSString *)methodName
 {
     SEL selector = sel_getUid(methodName.UTF8String);
+#if defined(__arm64__)
+    IMP implementation = class_getMethodImplementation(self.prototype, selector);
+#else
     IMP implementation = class_getMethodImplementation_stret(self.prototype, selector);
+#endif
     return [RKImplementation implementationWithPrototype:implementation];
 }
 

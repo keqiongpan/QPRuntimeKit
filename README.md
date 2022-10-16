@@ -15,7 +15,7 @@ QPRuntimeKit 支持使用第三方库管理工具 [CocoaPods](http://cocoapods.o
 可以在 Podfile 文件中添加如下项：
 
 ```
-pod 'QPRuntimeKit', '~> 0.1.1'
+pod 'QPRuntimeKit', '~> 0.1.2'
 ```
 
 
