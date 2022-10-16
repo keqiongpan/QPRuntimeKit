@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QPRuntimeKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Encapsulate Objective-C Runtime to parse or modify Runtime Objects in a manner consistent with its type system.'
 
 # This description is used to generate tags and improve search results.
